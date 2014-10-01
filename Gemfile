@@ -18,6 +18,10 @@ gem "bootstrap-sass", "~> 3.2.0"
 gem "autoprefixer-rails"
 gem 'devise', '>= 3.2.4'
 gem "simple_form"
+gem "figaro"
+gem "carrierwave"
+gem 'nokogiri', '~>1.5.0'
+gem "fog"
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
