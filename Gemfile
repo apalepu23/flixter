@@ -22,6 +22,7 @@ gem "figaro"
 gem "carrierwave"
 gem 'nokogiri', '~>1.5.0'
 gem "fog"
+gem "mini_magick"
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
