@@ -2,19 +2,22 @@ Flixter::Application.routes.draw do
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  resource :dashboard, :only => [:show]
   root "static_pages#index"
+  get 'privacy', :to => 'static_pages#privacy'
   resources :courses, :only => [:index, :show] do
     resources :enrollments, :only => :create
   end
 
   resources :lessons, :only => [:show]
   namespace :instructor do
+    resources :sections, :only => [:update]
+    resources :lessons, :only => [:update]
     resources :sections, :only => [] do
-        resources :lessons, :only => [:new, :create]
+        resources :lessons, :only => [:create]
     end
     resources :courses, :only => [:new, :create, :show] do
-      resources :sections, :only => [:new, :create]
+      resources :sections, :only => [:create]
     end
   end
   

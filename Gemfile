@@ -23,6 +23,9 @@ gem "carrierwave"
 gem 'nokogiri', '~>1.5.0'
 gem "fog"
 gem "mini_magick"
+gem 'stripe'
+gem 'ranked-model'
+gem 'jquery-ui-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
